@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="container" style=" margin-left: 3%;" >
+            <h1 >Warden List</h1>
+            <br>
+            <a href="/warden_insert" class="btn btn-dark btn-sm">INSERT</a>
+            <a href="/index" class="btn btn-dark btn-sm">Back To Home</a>
+            <br><br>
+        <table border="1px" class="table table-hover" style="width:100%">
+            <thead class="">
+                <th>Name</th>
+                <th>Address</th>
+                <th>Phone No</th>
+                <th>Email Id.</th>
+                <th colspan="2">Actions</th>
+            </thead>
+    
+    
+            {%  for i in warden_list %}
+            <tr>
+                <td>{{i.Name}}</td>
+                <td>{{i.Address}}</td>
+                <td>{{i.Phone_No}}</td>
+                <td>{{i.Emailid}}</td>
+              
+                <td><button class="btn btn-dark btn-sm"><a href="/warden_update/{{i.id}}"style="color:white;" >Update</a></button></td>
+            </tr>
+            {% endfor %}
+        </table><br>
+        </div>
+    </div>
+
+    {% endblock %} 

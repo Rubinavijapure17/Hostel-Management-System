@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HMS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    .container-fluid
+    {
+      margin-left: 70px;
+      margin-top: 60px;
+      margin-bottom: 200px;
+      padding: 25px;
+      font-size: 18px;
+    }
+    .container
+    {
+      margin-left: 100px;
+      margin-top: 30px;
+      margin-bottom: 200px;
+      padding: 40px;
+      font-size: 18px;
+    }
+  </style>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#" style="font-size: 32px; font-weight: bold;">HMS &nbsp;&nbsp;&nbsp;</a>
+  
+    <!-- Links -->
+    <ul class="navbar-nav">
+     
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Warden Details
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="/warden_insert">Add Warden</a>
+          <a class="dropdown-item" href="/warden_list">Warden List</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Customer Details
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="/Customer_insert">Add Customer</a>
+          <a class="dropdown-item" href="/Customer_list">Customer List</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Rooms
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="/room_insert">Add Room</a>
+          <a class="dropdown-item" href="/room_list"> Room List</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Details List</a>
+      </li>
+    </ul>
+  </nav>
+  {% block content %}
+
+        
+  {% endblock %}
+  <footer class="text-center">
+    <a href="#" title="To Top">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p>Website Developed by Rubina Vijapure. 
+    <br>For more details contact us:<a href="">  rubinavijapure17@gmail.com</a> </p>
+  </footer>
+</body>
+</html>
